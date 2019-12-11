@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "373672451452",
+    "firebase_url": "https://comicboom-f10ec.firebaseio.com",
+    "project_id": "comicboom-f10ec",
+    "storage_bucket": "comicboom-f10ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373672451452:android:445c8ee59a2422c0",
+        "android_client_info": {
+          "package_name": "com.apps.zarmeen.boom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "373672451452-knvb21o737ppictk8bvr4k10uhd6e1s2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9IitdbV7NqnY-kCXRkkTjEKhMG3s0VD4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

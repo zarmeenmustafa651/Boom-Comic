@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DailyFeatureFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--//monday-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MONDAY"
+            android:id="@+id/text1"
+            android:textSize="30sp"/>
+        <GridView
+            android:id="@+id/g1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </GridView>
+        <!--//tuesday-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TUESDAY"
+            android:id="@+id/t1"
+            android:textSize="30sp"/>
+        <GridView
+            android:id="@+id/g2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </GridView>
+        <!--//wednesday-->
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/t2"
+            android:layout_height="match_parent"
+            android:text="WEDNESDAY"
+            android:textSize="30sp"/>
+        <GridView
+            android:id="@+id/g3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </GridView>
+        <!--//thursday-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="THURSDAY"
+            android:id="@+id/t3"
+            android:textSize="30sp"/>
+        <GridView
+            android:id="@+id/g4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </GridView>
+        <!--//friday-->
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="FRIDAY"
+            android:textSize="30sp"/>
+        <GridView
+            android:id="@+id/g5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </GridView>
+        <!--//saturday-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="SATURDAY"
+            android:textSize="30sp"/>
+        <GridView
+            android:id="@+id/g6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </GridView>
+        <!--//sunday-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="SUNDAY"
+            android:textSize="30sp"/>
+        <GridView
+            android:id="@+id/g7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </GridView>
+    </LinearLayout>
+
+</FrameLayout>

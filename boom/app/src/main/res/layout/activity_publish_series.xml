@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/list_item_spacing">
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/defaultimg"
+                android:scaleType="fitXY"/>
+            <Button
+                android:layout_below="@+id/imgView"
+                android:id="@+id/buttonLoadPicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Load Picture"
+                android:layout_gravity="center"
+                />
+            <LinearLayout
+                android:padding="@dimen/list_item_spacing"
+                android:orientation="vertical"
+                android:id="@+id/titlelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonLoadPicture">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comic Title"
+                    android:textSize="20dp"
+                    android:textColor="#C00101"/>
+                <EditText
+                    android:hint="Title"
+                    android:textSize="20dp"
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:outlineSpotShadowColor="#C00101"/>
+            </LinearLayout>
+            <LinearLayout
+                android:padding="@dimen/list_item_spacing"
+                android:id="@+id/spinnerlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titlelayout"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/dftitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feturing Day"
+                    android:textSize="20dp"
+                    android:textColor="#C00101"/>
+                <Spinner
+                    android:background="#F5F4F4"
+                    android:layout_below="@+id/dftitle"
+                    android:id="@+id/spinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+
+                android:padding="@dimen/list_item_spacing"
+                android:id="@+id/spinnerlayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinnerlayout"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/gtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Genre"
+                    android:textColor="#C00101"
+                    android:textSize="20dp"/>
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F5F4F4" />
+            </LinearLayout>
+            <RelativeLayout
+                android:padding="@dimen/list_item_spacing"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinnerlayout1">
+                <Button
+                    android:id="@+id/next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/list_item_spacing"
+                    android:background="#C00101"
+                    android:textColor="#ffffff"
+                    android:text="Next"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

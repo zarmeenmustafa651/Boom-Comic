@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.apps.zarmeen.boom">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".LoginActivity"
+            android:label="">
+
+        </activity>
+        <activity
+            android:name=".SettingActivity"
+            android:label="Setting" />
+        <activity
+            android:name=".SearchActivity"
+            android:label="Search" />
+        <activity
+            android:name=".PublishActivity"
+            android:label="Add Series">
+
+        </activity>
+        <activity
+            android:name=".PublishEpisodeActivity"
+            android:label="Add Episodes">
+
+        </activity>
+        <activity android:name=".SignupActivity">
+
+        </activity>
+        <activity android:name=".ActivitySplash">
+            <intent-filter>
+                <action android:name="android.intent.action.Main" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ResetPasswordActivity">
+
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="">
+
+        </activity>
+        <activity
+            android:name=".MyAccountActivity"
+            android:label="">
+
+        </activity>
+
+        <service
+            android:name=".SendDataService"
+            android:exported="false">
+
+        </service>
+        <service
+            android:name=".RetrieveDataService"
+            android:exported="false">
+
+        </service>
+        <activity android:name=".EpisodesActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden">
+
+        </activity>
+    </application>
+
+</manifest>
